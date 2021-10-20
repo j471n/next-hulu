@@ -6,4 +6,8 @@
   body {
     @apply bg-[#06202A] text-gray-300;
   }
+
+  body::-webkit-scrollbar {
+    width: 0;
+  }
 }
