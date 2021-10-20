@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from "./../components/Header";
+// import Nav from "./../components/Nav";
+import Nav from '../components/Nav';
 
 export default function Home() {
   return (
@@ -10,11 +12,8 @@ export default function Home() {
         <meta name="description" content="Hulu Clone with the help of REST API" />
       </Head>
 
-      {/* Header */}
-
       <Header />
-
-      {/* Nav */}
+      <Nav />
       {/* Results */}
     </div>
   )
