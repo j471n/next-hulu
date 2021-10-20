@@ -12,7 +12,7 @@ import {
 export default function Header() {
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between h-auto items-center">
-      <div className="flex flex-grow justify-evenly max-w-2xl ">
+      <div className="flex flex-grow justify-evenly w-full sm:w-auto sm:max-w-2xl ">
         <HeaderItem title="Home" Icon={HomeIcon} />
         <HeaderItem title="trending" Icon={LightningBoltIcon} />
         <HeaderItem title="verified" Icon={BadgeCheckIcon} />
