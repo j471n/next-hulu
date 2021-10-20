@@ -19,6 +19,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
         }
         width={1280}
         height={720}
+        alt=""
         layout="responsive"
       />
 
