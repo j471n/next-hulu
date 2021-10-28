@@ -8,12 +8,14 @@ import {
   UserIcon,
   CollectionIcon,
 } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
 
 export default function Header() {
+  const router = useRouter();
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between h-auto items-center">
       <div className="flex flex-grow justify-evenly w-full sm:w-auto sm:max-w-2xl ">
-        <HeaderItem title="Home" Icon={HomeIcon} />
+        <HeaderItem title="Home" Icon={HomeIcon} route={ () => router.push("/")}/>
         <HeaderItem title="trending" Icon={LightningBoltIcon} />
         <HeaderItem title="verified" Icon={BadgeCheckIcon} />
         <HeaderItem title="collections" Icon={CollectionIcon} />
@@ -26,6 +28,7 @@ export default function Header() {
         alt=""
         width={200}
         height={100}
+        onClick={() => router.push("/")}
       />
     </header>
   );
