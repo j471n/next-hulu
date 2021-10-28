@@ -12,7 +12,7 @@ export default function Nav() {
             <h2
               onClick={() => router.push(`/?genre=${key}`)}
               key={key}
-              className="last:pr-24 capitalize cursor-pointer transition duration-100 transform sm:hover:scale-125 sm:hover:text-white active:scale-110 active:text-white sm:active:text-red-500"
+              className="last:pr-24 capitalize cursor-pointer select-none transition duration-100 transform sm:hover:scale-125 sm:hover:text-white active:scale-110 active:text-white sm:active:text-red-500"
             >
               {value.title}
             </h2>
